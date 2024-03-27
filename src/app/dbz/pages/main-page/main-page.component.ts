@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Character } from '../../interfaces/character';
+import { DbzService } from '../../services/dbz.service';
 
 @Component({
   selector: 'app-dbz-main-page',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
+
+  constructor(public dbz:DbzService){
+
+  }
+
 
 }
